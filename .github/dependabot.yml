@@ -8,5 +8,5 @@ registries:
 updates:
   - package-ecosystem: "npm"
     directory: "/"
-    schedule: {interval: "daily"}
+    schedule: {interval: "weekly"}
     registries: "*"
